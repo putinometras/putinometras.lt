@@ -103,6 +103,7 @@ echo "select * from system;" | ${SQLite} ${DB}
 cat << EOF
 </div>
 <div class="text1">kontaktai: info @ putinometras.lt</div>
+<div class="text1">metodika: <a href="https://github.com/putinometras/putinometras.lt">github</a></div>
 <div class="text1">duomenys: <a href="headlines.db">sqlite</a>, <a href="headlines.csv">csv</a></div>
 EOF
 echo "$FOOT"
