@@ -78,7 +78,11 @@ EOF
 
 echo "select count (date) as Viso,
              sum(case when headline like '%putin%' then 1 else 0 end) as 'Putinas',
-             cast(round(sum(case when headline like '%putin%' then 100.0 else 0 end) /  count(date)) as integer) as '%'
+             cast(round(sum(case when headline like '%putin%' then 100.0 else 0 end) /  count(date)) as integer) as '%',
+             sum(case when headline like '%obam%' then 1 else 0 end) as 'Obama',
+             cast(round(sum(case when headline like '%obam%' then 100.0 else 0 end) /  count(date)) as integer) as '%',
+             sum(case when headline like '%grybauskait%' then 1 else 0 end) as 'Grybauskaitė',
+             cast(round(sum(case when headline like '%grybauskait%' then 100.0 else 0 end) /  count(date)) as integer) as '%'
       from headlines;"  | ${SQLite} ${SP} ${DB}
 
 cat << EOF
