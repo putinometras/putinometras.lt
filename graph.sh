@@ -35,6 +35,8 @@ ${GP} -p -e "set terminal png;
              set datafile separator ',';
              set timefmt '%Y-%m-%d';
              set xdata time;
+             set format x '%F';
+             set xtics rotate by 45 right;
              plot '${BD}/ds.txt' using 1:3 t '%' w filledcurves,
                   '${BD}/ds.txt' using 1:2 t 'abs' w lines "
 
@@ -52,7 +54,10 @@ ${GP} -p -e "set terminal png;
              set output '${BD}/g1.png';
              set style fill transparent pattern 4 bo;
              set datafile separator ',';
-             set timefmt '%Y-%m-%d'; set xdata time;
+             set timefmt '%Y-%m-%d';
+             set xdata time;
+             set format x '%F';
+             set xtics rotate by 45 right;
              plot '${BD}/ds1.txt' using 1:2 t 'Putin' w filledcurves x1,
                   '${BD}/ds1.txt' using 1:3 t 'Obama' w filledcurves x1,
                   '${BD}/ds1.txt' using 1:4 t 'Grybauskaite' w filledcurves x1;"
