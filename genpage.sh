@@ -87,6 +87,22 @@ echo "select count (date) as Viso,
 
 cat << EOF
 </table>
+<div class="title2">Rusija:</div>
+<img class="center" src="g2.png">
+<table border=1 class="center">
+EOF
+
+echo "select date as Data,
+             count(date) as Viso,
+             sum(case when headline like '%rusij%' then 1 else 0 end) as Rusija,
+             cast(round(sum(case when headline like '%rusij%' then 100.0 else 0 end) / count(date)) as integer) as '%'
+      from headlines
+             group by date
+             order by date desc
+             limit 30;" | ${SQLite} ${SP} ${DB}
+
+cat << EOF
+</table>
 <div class="title2">Betteridge'o <a href="http://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines">dėsnis</a>:</div>
 <table border=1 class="center">
 EOF

@@ -38,7 +38,7 @@ ${GP} -p -e "set terminal png;
              set format x '%F';
              set xtics rotate by 45 right;
              plot '${BD}/ds.txt' using 1:3 t '%' w filledcurves,
-                  '${BD}/ds.txt' using 1:2 t 'abs' w lines "
+                  '${BD}/ds.txt' using 1:2 t 'abs' w lines"
 
 # control group graph
 ## generate datasource
@@ -61,6 +61,25 @@ ${GP} -p -e "set terminal png;
              plot '${BD}/ds1.txt' using 1:2 t 'Putin' w filledcurves x1,
                   '${BD}/ds1.txt' using 1:3 t 'Obama' w filledcurves x1,
                   '${BD}/ds1.txt' using 1:4 t 'Grybauskaite' w filledcurves x1;"
+
+# Country graph
+## generate datasource
+echo "select date as Data,
+             sum(case when headline like '%rusij%' then 1 else 0 end) as Rusija,
+             cast(round(sum(case when headline like '%rusij%' then 100.0 else 0 end) / count(date)) as integer) as '%'
+      from headlines
+      group by date
+      order by date desc;" | ${SQLite} -separator ',' ${DB} > ${BD}/ds2.txt
+## plot
+${GP} -p -e "set terminal png;
+             set output '${BD}/g2.png';
+             set datafile separator ',';
+             set timefmt '%Y-%m-%d';
+             set xdata time;
+             set format x '%F';
+             set xtics rotate by 45 right;
+             plot '${BD}/ds2.txt' using 1:2 t 'Rusija' w filledcurves x1 lc rgb 'blue',
+                  '${BD}/ds2.txt' using 1:3 t '%' w filledcurves x1 lc rgb 'red';"
 
 # export data to csv
 # not exactly graphing part, but it fits here
