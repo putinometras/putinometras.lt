@@ -53,6 +53,8 @@ for my $url (@rss){
         }
         # ignore necromants
         next if (($now_s - $date->strftime("%s")) > $necro);
+        # ignore futurists
+        next if ($now_s < $date->strftime("%s"));
         my $link =  $feed->link;
         # cosmetic fixes
         $link =~ s/^http:\/\///;
