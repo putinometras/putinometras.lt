@@ -21,9 +21,9 @@ First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
 
-| Viso   | Putinas | % | Obama | % | Grybauskaitė | % |
-| ------ | ------- | - | ----- | - | ------------ | - |
-| 220961 | 3010    | 1 | 726   | 0 | 1153         | 1 |
+Viso   | Putinas | % | Obama | % | Grybauskaitė | % 
+------ | ------- | - | ----- | - | ------------ | - 
+220961 | 3010    | 1 | 726   | 0 | 1153         | 1 
 
 ### Rusija:
 ![Rusija](g2.png "Rusija")
