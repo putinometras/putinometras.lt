@@ -17,9 +17,9 @@ Duomenys (220961 antraštės iš 5 populiariausių žinių portalų pagal http:/
 ### Kontrolinė grupė:
 ![Kontrolinė grupė](g1.png "Kontrolinė grupė")
 
-| Viso | Putinas | % | Obama | % | Grybauskaitė | % |
-|-|-|-|-|-|-|-|
-| 220961 | 3010 | 1 | 726 | 0 | 1153 | 1 |
+| Viso   | Putinas | % | Obama | % | Grybauskaitė | % |
+| ------ | ------- | - | ----- | - | ------------ | - |
+| 220961 | 3010    | 1 | 726   | 0 | 1153         | 1 |
 
 ### Rusija:
 ![Rusija](g2.png "Rusija")
