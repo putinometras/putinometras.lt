@@ -5,7 +5,7 @@ putinometras.lt - Lietuvos interneto žiniasklados antraščių putinometras
 
 2014-11-11 - 2015-09-04 veikęs interneto žiniasklados antraščių monitoringo ir analizės projektas.
 
-Duomenys (220962 antraštės iš 5 populiariausių žinių portalų pagal http://www.audience.lt):
+Duomenys (220961 antraštės iš 5 populiariausių žinių portalų pagal http://www.audience.lt):
 * [headlines.db](headlines.db) - SQLite db
 * [headlines.csv](headlines.csv) - CSV
 
@@ -17,9 +17,9 @@ Duomenys (220962 antraštės iš 5 populiariausių žinių portalų pagal http:/
 ### Kontrolinė grupė:
 ![Kontrolinė grupė](g1.png "Kontrolinė grupė")
 
-Viso|Putinas|%|Obama|%|Grybauskaitė|%
--|-|-|-|-|-|- 
-220961|3010|1|726|0|1153|1
+| Viso | Putinas | % | Obama | % | Grybauskaitė | % |
+|-|-|-|-|-|-|-|
+| 220961 | 3010 | 1 | 726 | 0 | 1153 | 1 |
 
 ### Rusija:
 ![Rusija](g2.png "Rusija")
