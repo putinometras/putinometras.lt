@@ -17,7 +17,7 @@ Duomenys (220961 antraštės iš 5 populiariausių žinių portalų pagal http:/
 ### Kontrolinė grupė:
 ![Kontrolinė grupė](g1.png "Kontrolinė grupė")
 
-First Header  | Second Header
+Viso | Putina
 ------------- | -------------
 Content Cell  | Content Cell
 
