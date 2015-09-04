@@ -17,6 +17,10 @@ Duomenys (220961 antraštės iš 5 populiariausių žinių portalų pagal http:/
 ### Kontrolinė grupė:
 ![Kontrolinė grupė](g1.png "Kontrolinė grupė")
 
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+
 | Viso   | Putinas | % | Obama | % | Grybauskaitė | % |
 | ------ | ------- | - | ----- | - | ------------ | - |
 | 220961 | 3010    | 1 | 726   | 0 | 1153         | 1 |
