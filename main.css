@@ -1,0 +1,77 @@
+html, body {
+    font-family: 'Gibson', sans-serif, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-family: verdana, arial, helvetica, sans-serif;a*/
+}
+
+.title1 {
+    font-weight: normal;
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.title2 {
+    font-weight: normal;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.text1 {
+    font-size: 60%;
+    color: #888;
+    text-align: center;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Web20 Table Style by Netway Media, http://www.netway-media.co */
+table {
+    border-collapse: collapse;
+    border: 1px solid #666666;
+    font: normal 11px verdana, arial, helvetica, sans-serif;
+    color: #363636;
+    background: #f6f6f6;
+    text-align:right;
+}
+caption {
+    text-align: center;
+    font: bold 16px arial, helvetica, sans-serif;
+    background: transparent;
+    padding:6px 4px 8px 0px;
+    color: #CC00FF;
+    text-transform: uppercase;
+}
+thead, tfoot {
+    background:url(bg1.png) repeat-x;
+    text-align:left;
+    height:30px;
+}
+thead th, tfoot th {
+    padding:5px;
+}
+table a {
+    color: #333333;
+    text-decoration:none;
+}
+table a:hover {
+    text-decoration:underline;
+}
+tr.odd {
+    background: #f1f1f1;
+}
+tbody th, tbody td {
+    padding:5px;
+}
+/* end Table Style */

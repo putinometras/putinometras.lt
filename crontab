@@ -1,0 +1,2 @@
+# m h  dom mon dow   command
+*/10 * * * * /www/putinometras.lt/data/rss2db.pl && /www/putinometras.lt/data/graph.sh; /www/putinometras.lt/data/genpage.sh > /www/putinometras.lt/data/index.html
